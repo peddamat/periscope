@@ -15,6 +15,7 @@ import (
 type DuplicateSet struct {
 	Paths []string
 	Size  int64
+	Hash  [32]byte
 	Tag   int64
 }
 
@@ -103,6 +104,7 @@ func (s *Session) initSchema() error {
 		id      INTEGER PRIMARY KEY,
 		path    TEXT UNIQUE,
 		size    INTEGER,
+		hash    INTEGER,
 		tag     INTEGER
 	)
 	`)
@@ -145,7 +147,7 @@ func (s *Session) AddAllC(dupes <-chan DuplicateSet) herror.Interface {
 	if err != nil {
 		return herror.Internal(err, "")
 	}
-	stmt, err := tx.Prepare("INSERT INTO duplicates (path, size, tag) VALUES (?, ?, ?)")
+	stmt, err := tx.Prepare("INSERT INTO duplicates (path, size, hash, tag) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		return herror.Internal(err, "")
 	}

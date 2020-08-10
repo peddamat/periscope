@@ -143,7 +143,7 @@ func (ps *Periscope) findDuplicates(paths []string) (<-chan interface{}, func())
 				}
 			}
 		}
-		for _, entries := range byFullHash {
+		for hash, entries := range byFullHash {
 			// note: this copy is necessary; just passing hash[:]
 			// directly will just give a pointer to the same
 			// variable whose contents are changing on every
@@ -153,6 +153,7 @@ func (ps *Periscope) findDuplicates(paths []string) (<-chan interface{}, func())
 				emit(db.DuplicateSet{
 					Paths: entries,
 					Size:  size,
+					Hash:  hash,
 					// note: no Tag provided here; that is
 					// filled in by db just before writing,
 					// because it's a little harder to get
