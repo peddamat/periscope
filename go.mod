@@ -1,4 +1,4 @@
-module github.com/anishathalye/periscope
+module github.com/peddamat/periscope
 
 go 1.13
 
