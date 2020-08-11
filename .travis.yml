@@ -17,4 +17,4 @@ jobs:
       os: linux
       services:
         - docker
-      script: docker run -e GITHUB_TOKEN=$GITHUB_TOKEN --rm --privileged -v $TRAVIS_BUILD_DIR:/go/src/github.com/anishathalye/periscope -v /var/run/docker.sock:/var/run/docker.sock -w /go/src/github.com/anishathalye/periscope mailchain/goreleaser-xcgo --rm-dist
+      script: docker run -e GITHUB_TOKEN=$GITHUB_TOKEN --rm --privileged -v $TRAVIS_BUILD_DIR:/go/src/github.com/peddamat/periscope -v /var/run/docker.sock:/var/run/docker.sock -w /go/src/github.com/peddamat/periscope mailchain/goreleaser-xcgo --rm-dist

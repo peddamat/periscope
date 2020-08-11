@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 )
 
 type TreeOptions struct {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/anishathalye/periscope"
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope"
+	"github.com/peddamat/periscope/herror"
 
 	"github.com/spf13/cobra"
 )

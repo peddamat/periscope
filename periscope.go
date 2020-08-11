@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/anishathalye/periscope/db"
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/db"
+	"github.com/peddamat/periscope/herror"
 
 	"github.com/cheggaaa/pb/v3"
 	"github.com/spf13/afero"

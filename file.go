@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 
 	"golang.org/x/crypto/blake2b"
 )

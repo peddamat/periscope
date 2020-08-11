@@ -3,7 +3,7 @@ package periscope
 import (
 	"fmt"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 
 	"github.com/dustin/go-humanize"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 )
 
 func main() {

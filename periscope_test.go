@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/anishathalye/periscope/db"
+	"github.com/peddamat/periscope/db"
 
 	"github.com/spf13/afero"
 )

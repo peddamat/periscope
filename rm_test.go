@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anishathalye/periscope/db"
-	"github.com/anishathalye/periscope/testfs"
+	"github.com/peddamat/periscope/db"
+	"github.com/peddamat/periscope/testfs"
 
 	"github.com/spf13/afero"
 )

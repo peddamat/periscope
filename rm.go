@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 )
 
 type RmOptions struct {

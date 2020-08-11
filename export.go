@@ -3,8 +3,8 @@ package periscope
 import (
 	"encoding/json"
 
-	"github.com/anishathalye/periscope/db"
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/db"
+	"github.com/peddamat/periscope/herror"
 )
 
 type ExportFormat int

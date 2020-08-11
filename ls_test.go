@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anishathalye/periscope/testfs"
+	"github.com/peddamat/periscope/testfs"
 
 	"github.com/spf13/afero"
 )

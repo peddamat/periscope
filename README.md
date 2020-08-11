@@ -2,7 +2,7 @@
 <!--
 Other useful stuff:
 
-https://goreportcard.com/report/github.com/anishathalye/periscope
+https://goreportcard.com/report/github.com/peddamat/periscope
 -->
 
 Periscope gives you "duplicate vision" to help you organize and de-duplicate your files without losing data.
@@ -150,7 +150,7 @@ above.
 ## Installation
 
 **Download a binary release:**
-[Periscope releases](https://github.com/anishathalye/periscope/releases).
+[Periscope releases](https://github.com/peddamat/periscope/releases).
 
 Periscope has binary releases for macOS and Linux. It has not been tested on
 Windows.
@@ -158,7 +158,7 @@ Windows.
 **Install from source with `go get`:**
 
 ```bash
-GO111MODULE=on go get github.com/anishathalye/periscope/...
+GO111MODULE=on go get github.com/peddamat/periscope/...
 ```
 
 Periscope depends on go-sqlite3, which uses cgo, so you need a C compiler
@@ -170,7 +170,7 @@ disabled otherwise.
 Testing releases:
 
 ```
-docker run -e --rm --privileged -v $PWD:/go/src/github.com/anishathalye/periscope -v /var/run/docker.sock:/var/run/docker.sock -w /go/src/github.com/anishathalye/periscope mailchain/goreleaser-xcgo --rm-dist --skip-publish
+docker run -e --rm --privileged -v $PWD:/go/src/github.com/peddamat/periscope -v /var/run/docker.sock:/var/run/docker.sock -w /go/src/github.com/peddamat/periscope mailchain/goreleaser-xcgo --rm-dist --skip-publish
 ```
 
 Supply `--snapshot` if version is not tagged

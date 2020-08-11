@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/anishathalye/periscope/db"
-	"github.com/anishathalye/periscope/herror"
-	"github.com/anishathalye/periscope/par"
+	"github.com/peddamat/periscope/db"
+	"github.com/peddamat/periscope/herror"
+	"github.com/peddamat/periscope/par"
 )
 
 type RefreshOptions struct {

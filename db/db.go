@@ -7,7 +7,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/anishathalye/periscope/herror"
+	"github.com/peddamat/periscope/herror"
 
 	_ "github.com/mattn/go-sqlite3"
 )

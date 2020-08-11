@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anishathalye/periscope/testfs"
+	"github.com/peddamat/periscope/testfs"
 )
 
 func TestExportBasic(t *testing.T) {
